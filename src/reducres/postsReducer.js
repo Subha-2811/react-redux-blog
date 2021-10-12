@@ -1,9 +1,9 @@
-const postsReducer = (posts = [], action) => {
+const postsReducer = (state = [], action) => {
   switch (action.type) {
     case "FETCH_POSTS":
       return action.payload;
     default:
-      return posts;
+      return state;
   }
   //   if (action.type === "FETCH_POSTS") {
   //     return action.payload;
